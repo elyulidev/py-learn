@@ -1,0 +1,1 @@
+export const m3Tuple = `# Tupla (Tuple)\n\nSimilar à lista, mas **imutável**. Uma vez criada, não pode ser alterada. Mais rápida e segura para constantes.`;

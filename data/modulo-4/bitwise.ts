@@ -1,0 +1,1 @@
+export const m4Bitwise = `# Operadores Bitwise\n\nOperações bit a bit. \`&\` (AND), \`|\` (OR), \`^\` (XOR), \`~\` (NOT), \`<<\` (Shift Left), \`>>\` (Shift Right).`;

@@ -1,0 +1,1 @@
+export const m9Plt = `# Visualização com Matplotlib\n\nBiblioteca de plotagem 2D. Permite criar gráficos de linha, dispersão, histogramas, etc., com qualidade de publicação.`;

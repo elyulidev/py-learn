@@ -1,0 +1,1 @@
+export const m5Pass = `# Passagem por valor e referência\n\nPython usa "Passagem por Objeto". Se o objeto é mutável, alterações refletem fora. Se imutável, não.`;

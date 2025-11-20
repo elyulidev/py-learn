@@ -1,0 +1,1 @@
+export const m3Str = `# Cadeias (Strings)\n\nSequências imutáveis de caracteres Unicode. Podem ser delimitadas por aspas simples ou duplas.`;

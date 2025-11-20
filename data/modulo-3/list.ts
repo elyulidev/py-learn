@@ -1,0 +1,1 @@
+export const m3List = `# Listas\n\nColeções ordenadas e mutáveis. Podem conter tipos mistos.\n\`\`\`python\nL = [1, "a", 3.14]\n\`\`\``;

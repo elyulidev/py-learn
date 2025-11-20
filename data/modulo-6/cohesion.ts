@@ -1,0 +1,1 @@
+export const m6Cohesion = `# Coesão\n\nMedida de quão relacionadas e focadas estão as responsabilidades de uma classe. Alta coesão é o ideal.`;

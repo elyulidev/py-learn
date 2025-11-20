@@ -1,0 +1,1 @@
+export const m3Collections = `# Coleções\n\nO módulo \`collections\` fornece estruturas de dados especializadas como \`Counter\`, \`deque\` e \`defaultdict\`.`;

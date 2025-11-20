@@ -1,0 +1,1 @@
+export const m6Poly = `# Polimorfismo\n\nA capacidade de objetos de tipos diferentes responderem ao mesmo método/interface.`;

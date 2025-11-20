@@ -1,0 +1,1 @@
+export const m9Numpy = `# NumPy: Arrays N-dimensionais\n\nBiblioteca fundamental para computação científica. Introduz o objeto \`ndarray\`, que é eficiente em memória e rápido para álgebra linear.`;

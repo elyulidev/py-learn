@@ -1,0 +1,1 @@
+export const m3Dict = `# Dicionário\n\nEstrutura de Chave-Valor (Hash Map). Chaves devem ser imutáveis.\n\`\`\`python\nd = {"chave": "valor"}\n\`\`\``;

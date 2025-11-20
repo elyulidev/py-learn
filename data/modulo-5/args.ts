@@ -1,0 +1,1 @@
+export const m5Args = `# Uso de args e kwargs\n\n\`*args\`: Recebe múltiplos argumentos posicionais como tupla.\n\`**kwargs\`: Recebe múltiplos argumentos nomeados como dicionário.`;

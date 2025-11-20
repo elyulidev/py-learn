@@ -1,0 +1,1 @@
+export const m5Recur = `# Recursividade\n\nFunção que chama a si mesma. Deve ter um caso base para não entrar em loop infinito.`;

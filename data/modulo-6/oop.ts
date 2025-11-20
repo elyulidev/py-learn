@@ -1,0 +1,1 @@
+export const m6Oop = `# Programação Orientada a Objetos\n\nParadigma que organiza o software em torno de dados (objetos), em vez de funções e lógica.`;

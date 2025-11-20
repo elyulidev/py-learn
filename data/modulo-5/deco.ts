@@ -1,0 +1,1 @@
+export const m5Deco = `# Decoradores\n\nPadrão de projeto que permite modificar o comportamento de uma função sem alterar seu código. Sintaxe \`@decorador\`.`;

@@ -1,0 +1,1 @@
+export const m4Walrus = `# Operador Walrus (:=)\n\n(Python 3.8+) Permite atribuir valor a uma variável dentro de uma expressão.\n\`if (n := len(lista)) > 10: ...\``;

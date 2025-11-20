@@ -1,0 +1,1 @@
+export const m5FuncProg = `# Programação Funcional\n\nUso de funções puras e alta ordem: \`map\`, \`filter\`, \`reduce\`.`;

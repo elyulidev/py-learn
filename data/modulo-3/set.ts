@@ -1,0 +1,1 @@
+export const m3Set = `# Set\n\nColeção não ordenada de elementos únicos. Implementa a teoria matemática dos conjuntos (União, Interseção, Diferença).`;

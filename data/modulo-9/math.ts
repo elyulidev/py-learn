@@ -1,0 +1,1 @@
+export const m9Math = `# Math\n\nMódulo da biblioteca padrão para funções matemáticas reais (C-style). \`sin\`, \`cos\`, \`sqrt\`, \`log\`, \`pi\`.`;

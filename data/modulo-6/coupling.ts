@@ -1,0 +1,1 @@
+export const m6Coupling = `# Acoplamento\n\nMedida de interdependência entre módulos. Baixo acoplamento é desejável para manutenção.`;

@@ -1,0 +1,1 @@
+export const m3Complex = `# Números Complexos\n\nPython suporta nativamente números complexos. Usa-se \`j\` para a unidade imaginária ($i$).\n\`\`\`python\nz = 3 + 4j\nz.conjugate() # 3 - 4j\n\`\`\``;

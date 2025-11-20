@@ -1,0 +1,1 @@
+export const m3Int = `# Inteiro (int)\n\nNúmeros sem parte decimal. Em Python 3, eles têm precisão arbitrária (o tamanho é limitado apenas pela memória).`;

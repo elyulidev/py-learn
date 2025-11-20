@@ -1,0 +1,1 @@
+export const m6Encap = `# Encapsulamento\n\nRestringir o acesso direto a componentes de um objeto. Em Python, usa-se \`_nome\` (convenção) ou \`__nome\` (name mangling).`;

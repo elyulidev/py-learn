@@ -1,0 +1,1 @@
+export const m4Log = `# Operadores Lógicos\n\nConectivos booleanos: \`and\`, \`or\`, \`not\`.`;

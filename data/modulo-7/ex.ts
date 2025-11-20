@@ -1,0 +1,1 @@
+export const m7Ex = `# Exceções em Python\n\nErros detectados durante a execução. Blocos \`try\`, \`except\`, \`else\`, \`finally\`.`;

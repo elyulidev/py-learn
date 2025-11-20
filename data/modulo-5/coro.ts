@@ -1,0 +1,1 @@
+export const m5Coro = `# Corrotinas\n\nFunções definidas com \`async def\`. Usadas em programação assíncrona.`;

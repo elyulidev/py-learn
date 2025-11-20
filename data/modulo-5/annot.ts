@@ -1,0 +1,1 @@
+export const m5Annot = `# Anotações em Funções\n\nType Hints não afetam a execução, mas documentam o código.\n\`def soma(a: int, b: int) -> int:\``;

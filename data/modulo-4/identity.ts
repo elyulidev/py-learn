@@ -1,0 +1,1 @@
+export const m4Identity = `# Operadores de Identidade\n\n\`is\`: Verifica se dois objetos ocupam o **mesmo espaço na memória**. \`is not\`: O inverso.`;

@@ -1,0 +1,1 @@
+export const m4Rel = `# Operadores Relacionais\n\nComparam valores e retornam booleano: \`==\`, \`!=\`, \`>\`, \`<\`, \`>=\`, \`<=\`.`;

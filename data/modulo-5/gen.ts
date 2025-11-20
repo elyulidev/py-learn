@@ -1,0 +1,1 @@
+export const m5Gen = `# Geradores\n\nFunções que usam \`yield\`. Produzem valores sob demanda, economizando memória em grandes sequências numéricas.`;

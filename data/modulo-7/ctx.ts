@@ -1,0 +1,1 @@
+export const m7Ctx = `# Context Managers\n\nObjetos que definem o contexto de execução (o protocolo \`with\`). Garante liberação de recursos (como fechar arquivos) mesmo com erros.`;

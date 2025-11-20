@@ -1,0 +1,1 @@
+export const m5Funcs = `# Funções em Python\n\nBlocos nomeados de código.\n\`\`\`python\ndef f(x):\n    return x + 1\n\`\`\``;

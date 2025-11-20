@@ -1,0 +1,1 @@
+export const m6Class = `# Criar classe\n\nA palavra-chave \`class\` define um novo tipo de objeto.\n\`class Ponto:\``;

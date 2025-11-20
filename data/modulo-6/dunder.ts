@@ -1,0 +1,1 @@
+export const m6Dunder = `# Métodos dunder ou mágicos\n\nMétodos com duplo sublinhado (\`__init__\`, \`__str__\`). Permitem interagir com a sintaxe nativa do Python.`;

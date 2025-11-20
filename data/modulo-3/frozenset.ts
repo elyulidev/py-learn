@@ -1,0 +1,1 @@
+export const m3Frozenset = `# Frozenset\n\nUma versão imutável do \`set\`. Como é imutável, pode ser usado como chave de dicionário.`;

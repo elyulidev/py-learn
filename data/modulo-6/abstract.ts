@@ -1,0 +1,1 @@
+export const m6Abstract = `# Abstração\n\nEsconder os detalhes complexos de implementação e mostrar apenas a funcionalidade relevante.`;

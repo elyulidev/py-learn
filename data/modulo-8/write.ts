@@ -1,0 +1,1 @@
+export const m8Write = `# Escrever arquivos\n\n\`open(arquivo, 'w')\`. Métodos: \`.write()\`. Cuidado: 'w' sobrescreve o arquivo; 'a' adiciona ao final.`;

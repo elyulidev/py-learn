@@ -1,0 +1,1 @@
+export const m6Methods = `# Tipos de métodos\n\n*   **Instância:** Recebe \`self\`. Opera no objeto.\n*   **Classe (\`@classmethod\`):** Recebe \`cls\`. Opera na classe.\n*   **Estático (\`@staticmethod\`):** Não recebe implícitos. Função comum dentro da classe.`;

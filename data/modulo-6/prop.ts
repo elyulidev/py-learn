@@ -1,0 +1,1 @@
+export const m6Prop = `# Decorador Property\n\nTransforma métodos em atributos de leitura/escrita controlada (Getters/Setters pythonicos).`;

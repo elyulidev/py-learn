@@ -1,0 +1,1 @@
+export const m6Abc = `# Interfaces e ABC\n\n\`abc.ABC\` e \`@abstractmethod\`. Definem contratos que as subclasses são obrigadas a implementar.`;

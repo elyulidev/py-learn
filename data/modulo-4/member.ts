@@ -1,0 +1,1 @@
+export const m4Member = `# Operadores de Membresia\n\n\`in\`: Verifica se um valor existe dentro de uma sequência (lista, string, set).`;

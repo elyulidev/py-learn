@@ -1,0 +1,1 @@
+export const m3Float = `# Float\n\nNúmeros de ponto flutuante (reais). Seguem o padrão IEEE 754 (Double Precision). Cuidado com erros de precisão decimal!`;

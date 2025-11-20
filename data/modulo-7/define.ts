@@ -1,0 +1,1 @@
+export const m7Define = `# Definindo Exceções\n\nCriar classes que herdam de \`Exception\` para representar erros específicos do domínio.`;

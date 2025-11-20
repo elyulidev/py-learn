@@ -1,0 +1,1 @@
+export const m5Lambda = `# Funções Lambda\n\nFunções pequenas e anônimas.\n\`g = lambda x: x**2\``;

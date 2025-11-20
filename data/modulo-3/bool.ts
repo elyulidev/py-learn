@@ -1,0 +1,1 @@
+export const m3Bool = `# Booleano\n\nRepresenta a verdade lógica: \`True\` (Verdadeiro) e \`False\` (Falso). Subclasse de int (True=1, False=0).`;

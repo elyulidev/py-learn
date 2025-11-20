@@ -1,0 +1,1 @@
+export const m5Cache = `# Caching de Funções\n\nUsar \`@functools.lru_cache\` para armazenar resultados de chamadas de funções pesadas (Memoization).`;

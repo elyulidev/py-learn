@@ -1,0 +1,1 @@
+export const m8Read = `# Ler arquivos\n\n\`open(arquivo, 'r')\`. Métodos: \`.read()\`, \`.readline()\`, \`.readlines()\`.`;

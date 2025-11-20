@@ -1,0 +1,1 @@
+export const m3Mutability = `# Mutabilidade\n\nConceito crucial: Objetos mutáveis (list, dict, set) podem ser alterados in-place. Imutáveis (int, str, tuple) não podem; operações neles criam novos objetos.`;

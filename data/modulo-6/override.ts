@@ -1,0 +1,1 @@
+export const m6Override = `# Sobrescrevendo métodos mágicos\n\nExemplo: Definir \`__add__\` permite somar dois objetos da sua classe com o operador \`+\`.`;

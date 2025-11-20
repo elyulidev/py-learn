@@ -1,0 +1,1 @@
+export const m7Assert = `# Uso do assert()\n\nInstrução de depuração. Se a condição for Falsa, levanta \`AssertionError\`.`;

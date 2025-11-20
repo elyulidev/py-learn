@@ -1,0 +1,1 @@
+export const m3Castings = `# Castings (Conversão)\n\nTransformar um tipo em outro explicitamente.\n\`int("123")\`, \`str(10)\`, \`list((1,2))\`.`;

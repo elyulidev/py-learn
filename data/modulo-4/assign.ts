@@ -1,0 +1,1 @@
+export const m4Assign = `# Operadores de Atribuição\n\n\`=\` é o principal. Compostos: \`+=\`, \`-=\`, \`*=\`, \`/=\`.`;

@@ -1,0 +1,1 @@
+export const m4Arith = `# Operadores Aritméticos\n\n\`+\` (Soma), \`-\` (Subtração), \`*\` (Produto), \`/\` (Divisão Real), \`//\` (Divisão Inteira), \`%\` (Resto/Módulo), \`**\` (Potência).`;

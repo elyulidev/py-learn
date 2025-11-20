@@ -1,0 +1,1 @@
+export const m6Inh = `# Herança\n\nMecanismo onde uma nova classe herda atributos e métodos de uma classe pai.\n\`class Filha(Mae):\``;
