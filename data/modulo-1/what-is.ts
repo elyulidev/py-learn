@@ -9,6 +9,8 @@ Sua última versão é o **Python 3**, e é a que recomendamos usar, já que as 
 
 De acordo com insights do *StackOverflow*, Python ocupa o pódio há anos em número de perguntas na plataforma. Um estudo de 2017 já colocava Python como uma das linguagens favoritas em países de alta renda como Alemanha, Reino Unido e Estados Unidos.
 
+![Crescimento do Python](https://cz7algaabcz8rpd1.public.blob.vercel-storage.com/conf1/tiobe-python.webp)
+
 Existe uma tendência clara e o interesse em Python deve continuar crescendo. Estes são os motivos:
 
 *   **Fácil de aprender:** Sintaxe simples que se assemelha a pseudocódigo. Pouco código faz muito.
@@ -55,8 +57,8 @@ Veja o código abaixo ilustrando essas características e a tipagem dinâmica:
 \`\`\`python
 def funcao(entrada):
     # A função aceita qualquer entrada, mas espera algo divisível
-    return entrada / 2 
-    
+    return entrada / 2
+
 x = "Olá"       # x é string
 x = 7.0         # x agora é float
 x = int(x)      # x convertido para int (7)
