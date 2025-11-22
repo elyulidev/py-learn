@@ -80,7 +80,7 @@ const App: React.FC = () => {
 				<div className='bg-red-600 dark:bg-red-700 p-8 text-white'>
 					<h2 className='text-3xl font-bold mb-2'>Avaliação Final</h2>
 					<p className='opacity-90'>
-						Programação de Computadores para Matemáticos
+						Prepare-se para aplicar todo o conhecimento adquirido no curso!
 					</p>
 				</div>
 				<div className='p-8 md:p-12'>
@@ -90,16 +90,22 @@ const App: React.FC = () => {
 								<FileText size={48} className='text-red-500' />
 							</div>
 							<h3 className='text-xl font-bold text-gray-800 dark:text-white mb-2'>
-								Exame do Curso
+								Avaliações do Curso
 							</h3>
 							<p className='text-gray-600 dark:text-gray-400 text-sm mb-6'>
 								Faça o download do arquivo PDF contendo os enunciados da
-								avaliação final e as instruções de entrega.
+								avaliação final e as instruções.
 							</p>
-							<button className='w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-xl flex items-center justify-center space-x-2 transition-colors group'>
+							<a
+								href='https://cz7algaabcz8rpd1.public.blob.vercel-storage.com/Avalia%C3%A7%C3%A3o.pdf'
+								download
+								target='_blank'
+								rel='noopener noreferrer'
+								className='w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-xl flex items-center justify-center space-x-2 transition-colors group'
+							>
 								<Download size={20} className='group-hover:animate-bounce' />
 								<span>Baixar PDF</span>
-							</button>
+							</a>
 						</div>
 						<div className='text-gray-600 dark:text-gray-300 w-full md:w-1/2 text-lg'>
 							<h4 className='font-bold text-gray-800 dark:text-white mb-4 flex items-center'>
@@ -108,16 +114,12 @@ const App: React.FC = () => {
 							</h4>
 							<ul className='space-y-4 list-disc list-inside text-base'>
 								<li>
-									O exame é individual e deve ser entregue no formato{" "}
-									<strong>.ipynb</strong> (Jupyter Notebook).
+									São <strong>2 Parcelares</strong> e{" "}
+									<strong>1 Exame Final</strong>
 								</li>
 								<li>
-									A data limite para entrega é <strong>30 de Junho</strong>.
-								</li>
-								<li>O código deve estar bem documentado e comentado.</li>
-								<li>
-									Utilize os conceitos de Numpy e Matplotlib aprendidos no
-									módulo 9.
+									Em cada Parcelar deve entregar a culminação de{" "}
+									<strong>1 Curso</strong> mostrando o certificado.
 								</li>
 							</ul>
 						</div>
@@ -135,27 +137,35 @@ const App: React.FC = () => {
 				desc: "O material base deste curso. Uma introdução completa e prática.",
 				color: "text-blue-500",
 				bg: "bg-blue-50 dark:bg-blue-900/20",
+				href: "https://ellibrodepython.com/",
+				type: "website",
 			},
 			{
-				title: "Python for Data Analysis",
-				author: "Wes McKinney",
-				desc: "Essencial para manipulação de dados com Pandas e NumPy.",
+				title: "Curso Intensivo de Python",
+				author: "Eric Matthes",
+				desc: "Um guia prático para iniciantes que desejam aprender Python rapidamente.",
 				color: "text-green-500",
 				bg: "bg-green-50 dark:bg-green-900/20",
+				href: "https://cz7algaabcz8rpd1.public.blob.vercel-storage.com/Curso%20Intensivo%20de%20Python.pdf",
+				type: "pdf",
 			},
 			{
-				title: "Python Fluente",
-				author: "Luciano Ramalho",
-				desc: "Para quem quer dominar as funcionalidades avançadas e o 'jeito pythônico'.",
+				title: "Python: Escreva seus primeiros programas",
+				author: "Felipe Cruz",
+				desc: "Um livro focado em iniciantes que desejam aprender Python do zero.",
 				color: "text-purple-500",
 				bg: "bg-purple-50 dark:bg-purple-900/20",
+				href: "https://cz7algaabcz8rpd1.public.blob.vercel-storage.com/Python%20Escreva%20seus%20primeiros%20programas.pdf",
+				type: "pdf",
 			},
 			{
-				title: "Matemática com Python",
-				author: "Docente Universitário",
-				desc: "Notas de aula e exercícios complementares de álgebra linear.",
+				title: "Python para Matemáticos",
+				author: "Andréa Lins e Lins Souza",
+				desc: "Explora o uso de Python em contextos matemáticos, ideal para quem quer aplicar programação em matemática.",
 				color: "text-orange-500",
 				bg: "bg-orange-50 dark:bg-orange-900/20",
+				href: "https://cz7algaabcz8rpd1.public.blob.vercel-storage.com/python%20para%20matem%C3%A1ticos.pdf",
+				type: "pdf",
 			},
 		];
 
@@ -183,7 +193,7 @@ const App: React.FC = () => {
 									<BookOpen size={28} className={book.color} />
 								</div>
 								<span className='text-xs font-medium text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded'>
-									PDF
+									{book.type === "pdf" ? "PDF" : "Website"}
 								</span>
 							</div>
 
@@ -193,14 +203,20 @@ const App: React.FC = () => {
 							<p className='text-sm text-primary-600 dark:text-primary-400 font-medium mb-3'>
 								{book.author}
 							</p>
-							<p className='text-gray-600 dark:text-gray-400 text-sm mb-6 flex-grow leading-relaxed'>
+							<p className='text-gray-600 dark:text-gray-400 text-sm mb-6 grow leading-relaxed'>
 								{book.desc}
 							</p>
 
-							<button className='w-full mt-auto border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium py-2 px-4 rounded-lg flex items-center justify-center transition-all group-hover:bg-gray-50 dark:group-hover:bg-gray-700/50'>
+							<a
+								href={book.href}
+								target='_blank'
+								download={book.type === "pdf" ? true : false}
+								rel='noopener noreferrer'
+								className='w-full mt-auto border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium py-2 px-4 rounded-lg flex items-center justify-center transition-all group-hover:bg-gray-50 dark:group-hover:bg-gray-700/50'
+							>
 								<Download size={16} className='mr-2' />
 								Baixar Recurso
-							</button>
+							</a>
 						</div>
 					))}
 				</div>
