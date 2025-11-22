@@ -1,3 +1,4 @@
+
 import { Chapter } from './types';
 
 export const CURRICULUM: Chapter[] = [
@@ -130,6 +131,27 @@ export const CURRICULUM: Chapter[] = [
       { id: 'm9-math', title: 'Math', description: 'Módulo padrão.', difficulty: 'orange', promptContext: 'Math module.' },
       { id: 'm9-numpy', title: 'NumPy: Arrays N-dimensionais', description: 'Computação vetorial.', difficulty: 'orange', promptContext: 'Numpy basics.' },
       { id: 'm9-plt', title: 'Visualização com Matplotlib', description: 'Gráficos.', difficulty: 'orange', promptContext: 'Matplotlib basics.' }
+    ]
+  },
+  {
+    id: 'mod-10',
+    title: 'Módulo 10: Modularização',
+    topics: [
+      { id: 'm10-modules', title: 'Módulos e Pacotes', description: 'Imports, Pip e Venv.', difficulty: 'orange', promptContext: 'Modules, imports, pip, venv and __name__.' }
+    ]
+  },
+  {
+    id: 'mod-eval',
+    title: 'Avaliação',
+    topics: [
+      { id: 'evaluation-main', title: 'Exame Final e Projetos', description: 'Download do exame.', difficulty: 'red', promptContext: 'Exam download.' }
+    ]
+  },
+  {
+    id: 'mod-biblio',
+    title: 'Bibliografia',
+    topics: [
+      { id: 'bibliography-main', title: 'Referências e Livros', description: 'Material de apoio.', difficulty: 'green', promptContext: 'Books and references.' }
     ]
   }
 ];

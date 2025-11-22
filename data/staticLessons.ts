@@ -85,6 +85,8 @@ import { m9Math } from './modulo-9/math';
 import { m9Numpy } from './modulo-9/numpy';
 import { m9Plt } from './modulo-9/plt';
 
+import { m10Modules } from './modulo-10/modules';
+
 export const STATIC_LESSONS: Record<string, string> = {
   // --- MÓDULO 1 ---
   'm1-what-is': m1WhatIs,
@@ -179,5 +181,8 @@ export const STATIC_LESSONS: Record<string, string> = {
   // --- MÓDULO 9 ---
   'm9-math': m9Math,
   'm9-numpy': m9Numpy,
-  'm9-plt': m9Plt
+  'm9-plt': m9Plt,
+
+  // --- MÓDULO 10 ---
+  'm10-modules': m10Modules
 };

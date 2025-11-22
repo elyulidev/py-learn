@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus, ghcolors } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Copy, Check, Info, Terminal, Hash, List } from 'lucide-react';
@@ -44,6 +45,7 @@ const MarkdownViewer: React.FC<MarkdownViewerProps> = ({ content, isDark }) => {
   return (
     <div className="w-full max-w-none font-sans leading-relaxed">
       <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
         components={{
           // --- Títulos ---
           h1: ({ children, ...props }) => (
