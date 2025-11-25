@@ -1,4 +1,3 @@
-
 export const m9Math = `
 # Módulo Math
 
@@ -16,7 +15,7 @@ import math
 
 O módulo \`math\` define várias constantes fundamentais com a maior precisão disponível no sistema (geralmente números de ponto flutuante de 64 bits).
 
-### Pi ($\pi$) e Tau ($\tau$)
+### Pi ($\\pi$) e Tau ($\\tau$)
 A constante mais famosa, a razão entre a circunferência de um círculo e seu diâmetro.
 
 \`\`\`python
@@ -24,7 +23,7 @@ print(math.pi)
 # 3.141592653589793
 \`\`\`
 
-Também está disponível o Tau ($\tau = 2\pi$), que é a razão entre a circunferência e o raio, preferido por muitos matemáticos modernos para simplificar fórmulas trigonométricas.
+Também está disponível o Tau ($\\tau = 2\\pi$), que é a razão entre a circunferência e o raio, preferido por muitos matemáticos modernos para simplificar fórmulas trigonométricas.
 
 \`\`\`python
 print(math.tau)
@@ -109,8 +108,8 @@ print(math.exp(2)) # 7.389056...
 \`\`\`
 
 ### \`log(x, [base])\`
-Com um argumento, retorna o logaritmo natural ($\ln x$ ou $\log_e x$).
-Com dois argumentos, retorna o logaritmo na base especificada ($\log_{base} x$).
+Com um argumento, retorna o logaritmo natural ($\\ln x$ ou $\\log_e x$).
+Com dois argumentos, retorna o logaritmo na base especificada ($\\log_{base} x$).
 
 \`\`\`python
 print(math.log(math.e))    # 1.0 (Log natural)
@@ -158,7 +157,7 @@ print(math.degrees(math.pi)) # 180.0
 \`asin(x)\`, \`acos(x)\`, \`atan(x)\`.
 
 ### \`atan2(y, x)\`
-**Muito importante:** Calcula o arco tangente de $y/x$, mas leva em conta os sinais de ambos os argumentos para determinar o quadrante correto do resultado (retorna entre $-\pi$ e $\pi$).
+**Muito importante:** Calcula o arco tangente de $y/x$, mas leva em conta os sinais de ambos os argumentos para determinar o quadrante correto do resultado (retorna entre $-\\pi$ e $\\pi$).
 
 \`\`\`python
 # Ponto (-1, -1) está no 3º quadrante (-135 graus ou -3pi/4)
@@ -189,8 +188,8 @@ print(math.lcm(4, 6)) # 12
 ### \`comb(n, k)\` e \`perm(n, k)\`
 Calculam o número de combinações e permutações sem repetição.
 
-*   **Combinações (Binômio de Newton):** $\binom{n}{k} = \frac{n!}{k!(n-k)!}$
-*   **Permutações:** $P(n, k) = \frac{n!}{(n-k)!}$
+*   **Combinações (Binômio de Newton):** $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$
+*   **Permutações:** $P(n, k) = \\frac{n!}{(n-k)!}$
 
 \`\`\`python
 # Quantas formas de escolher 2 cartas de um baralho de 52?
@@ -214,7 +213,7 @@ print(math.factorial(5)) # 120
 Para matemática avançada e estatística.
 
 ### \`gamma(x)\`
-A função Gama $\Gamma(x)$, que é uma extensão contínua do fatorial. Para inteiros, $\Gamma(n) = (n-1)!$.
+A função Gama $\\Gamma(x)$, que é uma extensão contínua do fatorial. Para inteiros, $\\Gamma(n) = (n-1)!$.
 
 \`\`\`python
 print(math.gamma(5)) # 24.0 (4!)

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
 	vscDarkPlus,
@@ -47,7 +49,8 @@ const MarkdownViewer: React.FC<MarkdownViewerProps> = ({ content, isDark }) => {
 	return (
 		<div className='w-full max-w-none font-sans leading-relaxed'>
 			<ReactMarkdown
-				remarkPlugins={[remarkGfm]}
+				remarkPlugins={[remarkGfm, remarkMath]}
+				rehypePlugins={[rehypeKatex]}
 				components={{
 					// --- Títulos ---
 					h1: ({ children, ...props }) => (
