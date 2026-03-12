@@ -10,6 +10,7 @@ const ai = new GoogleGenAI({
 export const getLessonContent = async (topic: Topic): Promise<string> => {
 	const content = STATIC_LESSONS[topic.id];
 
+
 	if (content) {
 		return content;
 	}
