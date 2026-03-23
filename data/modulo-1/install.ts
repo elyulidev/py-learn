@@ -1,4 +1,3 @@
-
 export const m1Install = `
 # Como programar em Python?
 
@@ -64,7 +63,7 @@ Você verá na saída algo como \`Python 3.10.x\`.
 
 Agora vamos instalar o PyCharm. Ele é um IDE da empresa JetBrains, disponível para Windows, Linux e macOS.
 
-Para instalar, acesse a seção de downloads da JetBrains e selecione a versão **Community**, que é a versão gratuita para desenvolvimento puro em Python.
+Para instalar, acesse a seção de downloads da JetBrains.
 
 ### 3. Configurando o PyCharm
 
@@ -85,5 +84,5 @@ print("Olá, Mundo!")
 
 Para rodar, vá em *Run -> Run* ou clique com o botão direito e selecione *Run*.
 
-> **Dica:** Uma das características mais úteis no PyCharm é que se podem instalar pacotes de maneira muito simples através de sua interface gráfica. Por exemplo, se quiser instalar a biblioteca \`numpy\`, vá em *Preferences -> Project -> Project Interpreter* e adicione bibliotecas clicando no \`+\`.
+> **Dica:** Uma das características mais úteis no PyCharm é que se podem instalar pacotes de maneira muito simples através de sua interface gráfica. Por exemplo, se quiser instalar a biblioteca \`numpy\`, vá em *File -> Settings -> Python -> Interpreter* e adicione bibliotecas clicando no \`+\`.
 `;
