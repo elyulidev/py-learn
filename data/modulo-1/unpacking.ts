@@ -1,6 +1,5 @@
-
 export const m1Unpacking = `
-# Unpacking em Python
+# Unpacking
 
 O **unpacking** (desempacotamento) em Python permite atribuir os elementos de uma lista (ou qualquer iterável) a múltiplas variáveis em uma única linha de código.
 
@@ -134,7 +133,7 @@ Por último, também podemos fazer coisas interessantes com loops \`for\`.
 for primeiro, *resto in [(1, 2, 3), (4, 5, 6, 7)]:
     print("Primeiro:", primeiro)
     print("Resto:", resto)
-    
+
 # Saída:
 # Primeiro: 1
 # Resto: [2, 3]

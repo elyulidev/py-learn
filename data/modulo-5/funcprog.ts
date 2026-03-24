@@ -1,6 +1,5 @@
-
 export const m5FuncProg = `
-# Programação Funcional em Python
+# Programação Funcional
 
 Em poucas palavras, a programação funcional é um paradigma de programação distinto do tradicional estruturado ou orientado a objetos ao qual costumamos estar acostumados. Baseia-se principalmente no uso de funções, sendo as mesmas praticamente a única ferramenta que a linguagem nos oferece. Por isso, em linguagens puramente funcionais como Haskell, não existem loops \`for\` ou \`while\`.
 
@@ -72,7 +71,7 @@ lista = [7, 4, 16, 3, 8]
 pares = filter(lambda x: x % 2 == 0, lista)
 
 print(list(pares))
-# [4, 16, 8] 
+# [4, 16, 8]
 \`\`\`
 
 Note que o seguinte código seria equivalente:

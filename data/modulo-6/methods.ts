@@ -1,6 +1,5 @@
-
 export const m6Methods = `
-# Métodos em Python: Instância, Classe e Estáticos
+# Métodos: Instância, Classe e Estáticos
 
 Em outros capítulos vimos como se podem criar métodos com \`def\` dentro de uma classe, podendo receber parâmetros como entrada e modificar o estado (como os atributos) da instância.
 

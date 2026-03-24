@@ -1,6 +1,5 @@
-
 export const m6Class = `
-# Criar Classe em Python
+# Criar Classe
 
 Criar uma classe em Python é extremamente simples e pode ser feito em apenas duas linhas de código usando a palavra reservada **\`class\`**.
 
@@ -29,7 +28,7 @@ Note a diferença entre \`atributo1\` e \`argumento1\` (dica: atributo de classe
 class MinhaClasse:
     atributo1 = "valor1"
     atributo2 = "valor2"
-    
+
     def __init__(self, argumento1):
         # Atributo de instância (único para cada objeto)
         self.argumento1 = argumento1
@@ -45,10 +44,10 @@ Além de atributos e do construtor, toda classe tem um conjunto de funções ou 
 class MinhaClasse:
     atributo1 = "valor1"
     atributo2 = "valor2"
-    
+
     def __init__(self, argumento1):
         self.argumento1 = argumento1
-        
+
     def funcao1(self):
         print("Esta é a função 1")
 \`\`\`

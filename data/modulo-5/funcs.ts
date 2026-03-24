@@ -1,6 +1,5 @@
-
 export const m5Funcs = `
-# Funções em Python
+# Funções
 
 Anteriormente, usamos funções nativas que vêm com o Python, como \`len()\` para calcular o comprimento de uma lista, mas, assim como em outras linguagens de programação, também podemos definir nossas próprias funções. Para isso, fazemos uso da palavra-chave **\`def\`**.
 
@@ -148,7 +147,7 @@ O Python tem uma ferramenta muito poderosa para isso. Se declararmos um argument
 def soma(*numeros):
     print(type(numeros))
     # <class 'tuple'>
-    
+
     total = 0
     for n in numeros:
         total += n
@@ -271,7 +270,7 @@ As anotações são úteis para documentação e ferramentas de análise estáti
 
 \`\`\`python
 # Isso NÃO gera erro em tempo de execução, embora a anotação diga int
-print(multiplica_por_3("Cadeia")) 
+print(multiplica_por_3("Cadeia"))
 # 'CadeiaCadeiaCadeia'
 \`\`\`
 `;

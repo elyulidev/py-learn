@@ -1,6 +1,5 @@
-
 export const m5Args = `
-# Args e Kwargs em Python
+# Args e Kwargs
 
 Se você já teve que definir uma função com um número variável de argumentos e não sabia como fazê-lo, a seguir explicamos como, graças aos **args** e **kwargs** em Python.
 
@@ -64,7 +63,7 @@ Neste caso, em vez de termos uma tupla, temos um **dicionário**. Você pode ver
 \`\`\`python
 def soma(**kwargs):
     print(type(kwargs))
-    
+
 soma(x=3)
 # <class 'dict'>
 \`\`\`
@@ -78,7 +77,7 @@ def soma(**kwargs):
         print(f"{key} = {value}")
         s += value
     return s
-    
+
 print(soma(a=3, b=10, c=3))
 # Saída:
 # a = 3
@@ -107,10 +106,10 @@ Vejamos um exemplo:
 def funcao(a, b, *args, **kwargs):
     print("a =", a)
     print("b =", b)
-    
+
     for arg in args:
         print("args =", arg)
-        
+
     for key, value in kwargs.items():
         print(key, "=", value)
 

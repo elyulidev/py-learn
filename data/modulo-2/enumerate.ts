@@ -1,6 +1,5 @@
-
 export const m2Enumerate = `
-# Enumerate em Python
+# Enumerate
 
 O uso do \`for\` em Python nos permite iterar coleções, percorrendo todos os seus elementos.
 

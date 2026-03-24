@@ -1,6 +1,5 @@
-
 export const m5Deco = `
-# Decoradores em Python
+# Decoradores
 
 Os decoradores são funções que modificam o comportamento de outras funções, ajudam a encurtar nosso código e o tornam mais *Pythônico*. Se você já viu o símbolo \`@\`, você está diante de um decorador (ou *decorator*), seja um que o Python oferece por padrão ou um criado especificamente.
 
@@ -62,7 +61,7 @@ Antes de mais nada, é preciso entender que **tudo em Python é um objeto**, inc
 \`\`\`python
 def diga_ola():
     print("Olá")
-    
+
 f1 = diga_ola() # Chama a função. f1 recebe o retorno (None)
 f2 = diga_ola   # Atribui a função a f2
 
@@ -72,7 +71,7 @@ print(f2)      # <function diga_ola at 0x...>
 # f1()         # Erro! Não é válido pois f1 é None
 f2()           # Chama f2, que é diga_ola()
 
-del f2         # Apaga a referência f2 
+del f2         # Apaga a referência f2
 # f2()         # Erro! Já não existe
 
 diga_ola()     # Ok. A função original segue existindo
@@ -86,12 +85,12 @@ def operacoes(op):
         return a + b
     def subtrai(a, b):
         return a - b
-    
+
     if op == "soma":
         return soma
     elif op == "subtrai":
         return subtrai
-    
+
 funcao_soma = operacoes("soma")
 print(funcao_soma(5, 7)) # 12
 
@@ -101,7 +100,7 @@ print(funcao_subtrai(5, 7)) # -2
 
 Se chamamos a função devolvida com dois operandos, realizar-se-á uma operação distinta em função de se usou soma ou subtração.
 
-Agora já podemos dar a última volta no parafuso e escrever nosso próprio decorador **sem fazer uso de \`@\`**. 
+Agora já podemos dar a última volta no parafuso e escrever nosso próprio decorador **sem fazer uso de \`@\`**.
 
 Por um lado temos o decorador, que recebe como entrada uma função e devolve outra função decorada. Por outro, a função \`soma()\` que queremos decorar.
 
@@ -213,7 +212,7 @@ def requer_autenticacao(f):
 @requer_autenticacao
 def diga_ola():
     print("Olá!")
-    
+
 diga_ola()
 \`\`\`
 

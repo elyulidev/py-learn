@@ -1,6 +1,5 @@
-
 export const m1Syntax = `
-# Sintaxe em Python
+# Sintaxe
 
 A seguir veremos a sintaxe do Python, vendo como podemos começar a usar a linguagem criando nossas primeiras variáveis e estruturas de controle.
 
@@ -167,7 +166,7 @@ Existem palavras que o Python usa internamente e não podem ser usadas como nome
 import keyword
 print(keyword.kwlist)
 
-# Exemplos: 'False', 'None', 'True', 'and', 'class', 'def', 
+# Exemplos: 'False', 'None', 'True', 'and', 'class', 'def',
 # 'if', 'import', 'return', 'while', 'with'...
 \`\`\`
 

@@ -1,6 +1,5 @@
-
 export const m7Assert = `
-# Assert em Python
+# Assert
 
 O uso de **assert** em Python nos permite realizar verificações (asserções) durante o desenvolvimento. Se a expressão contida dentro dele for \`False\`, será lançada uma exceção, concretamente \`AssertionError\`.
 

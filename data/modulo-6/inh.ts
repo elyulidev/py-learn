@@ -1,6 +1,5 @@
-
 export const m6Inh = `
-# Herança em Python
+# Herança
 
 Para entender a herança, é fundamental entender a programação orientada a objetos (POO), por isso recomendamos começar por aí antes.
 
@@ -145,7 +144,7 @@ Em poucas palavras, a função **\`super()\`** nos permite acessar os métodos d
 class Animal:
     def __init__(self, especie, idade):
         self.especie = especie
-        self.idade = idade        
+        self.idade = idade
     def falar(self):
         pass
     def moverse(self):

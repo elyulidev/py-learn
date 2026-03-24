@@ -1,5 +1,5 @@
 export const m1Install = `
-# Como programar em Python?
+# Como programar?
 
 Se você quer começar a programar em Python, neste módulo apresentamos duas alternativas de como você pode começar a fazê-lo:
 

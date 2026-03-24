@@ -1,6 +1,5 @@
-
 export const m2Range = `
-# Range em Python
+# Range
 
 ## Uso do range
 
@@ -10,7 +9,7 @@ Suponhamos que queremos iterar uma variável \`i\` de 0 a 5. Fazendo uso do que 
 
 \`\`\`python
 for i in (0, 1, 2, 3, 4, 5):
-    print(i) 
+    print(i)
 # Saída: 0, 1, 2, 3, 4, 5
 \`\`\`
 
@@ -18,7 +17,7 @@ Trata-se de uma solução que cumpre com nosso requisito. O conteúdo depois do 
 
 \`\`\`python
 for i in range(6):
-    print(i) 
+    print(i)
 # Saída: 0, 1, 2, 3, 4, 5
 \`\`\`
 
@@ -49,7 +48,7 @@ Misturando isso com o loop \`for\`, temos:
 
 \`\`\`python
 for i in range(5, 20, 2):
-    print(i) 
+    print(i)
 # Saída: 5, 7, 9, 11, 13, 15, 17, 19
 \`\`\`
 
@@ -59,7 +58,7 @@ Podem-se gerar também sequências inversas (decrescentes), começando por um n�
 
 \`\`\`python
 for i in range(5, 0, -1):
-    print(i) 
+    print(i)
 # Saída: 5, 4, 3, 2, 1
 \`\`\`
 

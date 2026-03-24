@@ -1,4 +1,4 @@
-export const m3Str = `# Strings Python
+export const m3Str = `# Strings
 
 Strings em Python são um tipo imutável que permite armazenar sequências de caracteres. Para criar uma, é necessário incluir o texto entre aspas duplas \`\"\`. Você pode obter mais ajuda com o comando \`help(str)\`.
 

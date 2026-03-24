@@ -1,6 +1,5 @@
-
 export const m1Reserved = `
-# Palavras Reservadas em Python
+# Palavras Reservadas
 
 Python possui um conjunto de palavras reservadas que não podemos utilizar para nomear variáveis nem funções, já que a linguagem as reserva internamente para seu funcionamento.
 

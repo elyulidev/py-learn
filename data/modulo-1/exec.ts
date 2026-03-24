@@ -1,6 +1,6 @@
 
 export const m1Exec = `
-# Executando Scripts Python
+# Executando Scripts
 
 Até agora vimos pequenos trechos de código, mas como fazemos para executar programas maiores e reais? Existem fundamentalmente duas formas de executar código Python: através do **intérprete interativo** ou mediante **scripts (arquivos)**.
 

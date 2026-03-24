@@ -1,6 +1,5 @@
-
 export const m3Bool = `
-# Booleanos em Python
+# Booleanos
 
 Assim como em outras linguagens de programação, em Python existe o tipo **bool** ou booleano. É um tipo de dado que permite armazenar dois valores: \`True\` (Verdadeiro) ou \`False\` (Falso).
 
@@ -72,7 +71,7 @@ print(issubclass(bool, int))
 Para matemáticos, isso é interessante pois significa que \`True\` se comporta como 1 e \`False\` como 0 em operações aritméticas:
 
 \`\`\`python
-print(True + True) 
+print(True + True)
 # 2
 \`\`\`
 `;

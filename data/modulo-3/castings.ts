@@ -1,6 +1,5 @@
-
 export const m3Castings = `
-# Cast em Python
+# Cast
 
 Fazer um *cast* ou *casting* significa converter um tipo de dado para outro. Anteriormente vimos tipos como \`int\`, \`string\` ou \`float\`. Pois bem, é possível converter de um tipo para outro.
 

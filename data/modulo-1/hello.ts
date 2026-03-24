@@ -1,6 +1,5 @@
-
 export const m1Hello = `
-# Olá Mundo em Python
+# Olá Mundo
 
 Em qualquer introdução a uma nova linguagem de programação, não pode faltar o famoso **Olá Mundo**. Trata-se do primeiro programa por onde se começa, que consiste em programar uma aplicação que mostra esse texto na tela. Se você executar o código a seguir, terá cumprido o primeiro marco da programação em Python.
 

@@ -1,6 +1,5 @@
-
 export const m2Switch = `
-# Switch em Python (Simulação)
+# Switch (Simulação)
 
 O **switch** é uma ferramenta comum em várias linguagens que nos permite executar diferentes seções de código dependendo de uma condição. Sua funcionalidade é similar a usar vários \`if\`, mas infelizmente o Python (antes da versão 3.10) não possuía um \`switch\` nativo.
 

@@ -1,6 +1,5 @@
-
 export const m5Gen = `
-# Geradores em Python
+# Geradores
 
 Se você já encontrou uma função em Python que não apenas tem uma instrução \`return\`, mas também retorna um valor usando **\`yield\`**, você já viu o que é um **gerador** (*generator*). A seguir, explicamos como são criados, para que servem e suas vantagens. Também é muito importante não confundir geradores com corrotinas, que também usam \`yield\`, mas de outra maneira.
 
@@ -166,7 +165,7 @@ def primeiros_n(n):
     for i in range(n):
         nums.append(i)
     return nums
-    
+
 print(sum(primeiros_n(100)))
 # Saída: 4950
 \`\`\`

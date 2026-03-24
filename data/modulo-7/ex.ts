@@ -1,6 +1,5 @@
-
 export const m7Ex = `
-# Exceções em Python
+# Exceções
 
 As exceções em Python são uma ferramenta muito potente que a grande maioria das linguagens de programação modernas possui. Trata-se de uma forma de controlar o comportamento de um programa quando ocorre um erro.
 

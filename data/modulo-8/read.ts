@@ -1,6 +1,5 @@
-
 export const m8Read = `
-# Ler Arquivos em Python
+# Ler Arquivos
 
 Assim como em outras linguagens de programação, em Python é possível abrir arquivos (*ficheros*) e ler seu conteúdo. Os arquivos podem ser dos mais variados tipos, desde um simples texto até conteúdo binário. Para simplificar, focaremos na leitura de arquivos de texto.
 
@@ -132,9 +131,9 @@ Ao usar \`with\`, o Python se encarrega de abrir o arquivo e, o mais importante,
 
 \`\`\`python
 with open('exemplo.txt', 'r') as arquivo:
-    # Usar o arquivo. 
+    # Usar o arquivo.
     conteudo = arquivo.read()
-    
+
 # Aqui o arquivo já está fechado automaticamente.
 \`\`\`
 
@@ -147,7 +146,7 @@ A melhor maneira de ler um arquivo linha a linha em Python é iterar diretamente
 \`\`\`python
 with open('exemplo.txt', 'r') as arquivo:
     for linha in arquivo:
-        # end='' evita duplicar a quebra de linha, 
+        # end='' evita duplicar a quebra de linha,
         # já que 'linha' já traz o \\n do arquivo e o print coloca outro.
         print(linha, end='')
 

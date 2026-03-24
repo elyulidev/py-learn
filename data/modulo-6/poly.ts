@@ -1,6 +1,5 @@
-
 export const m6Poly = `
-# Polimorfismo em Python
+# Polimorfismo
 
 O termo **polimorfismo** visto do ponto de vista do Python é complicado de explicar sem falar do *duck typing*, por isso recomendamos a leitura desse capítulo se você ainda não o fez.
 

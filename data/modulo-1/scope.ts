@@ -1,6 +1,5 @@
-
 export const m1Scope = `
-# Escopo de Variáveis em Python
+# Escopo de Variáveis
 
 Python classifica os escopos de acordo com o modelo **LEGB**, que determina a ordem em que as variáveis são buscadas. A sigla LEGB corresponde a:
 
@@ -52,8 +51,8 @@ imprimir_mensagem()
 
 print(mensagem)  # Também acessível fora das funções
 
-# Saída: 
-# Olá do escopo global 
+# Saída:
+# Olá do escopo global
 # Olá do escopo global
 \`\`\`
 

@@ -1,6 +1,5 @@
-
 export const m8Write = `
-# Escrever Arquivos em Python
+# Escrever Arquivos
 
 A seguir explicamos como escrever dados em um arquivo usando Python. Imagine que você tem dados que gostaria de salvar em um arquivo para análise posterior. Explicamos como salvá-los em um arquivo, por exemplo, \`.txt\`.
 
@@ -122,17 +121,17 @@ def escreve_arquivo(mensagem):
     with open('arquivo_comunicacao.txt', 'w') as arquivo:
         arquivo.write(mensagem)
 
-# Ler a mensagem do arquivo        
+# Ler a mensagem do arquivo
 def le_arquivo():
     mensagem = ""
     # Lê o conteúdo
     with open('arquivo_comunicacao.txt', 'r') as arquivo:
         mensagem = arquivo.read()
-        
+
     # Apaga o conteúdo do arquivo para deixá-lo vazio (abrindo como 'w' e fechando)
     f = open('arquivo_comunicacao.txt', 'w')
     f.close()
-    
+
     return mensagem
 
 escreve_arquivo("Isto é uma mensagem")
