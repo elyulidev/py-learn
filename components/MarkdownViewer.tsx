@@ -146,6 +146,8 @@ const MarkdownViewer: React.FC<MarkdownViewerProps> = ({ content, isDark }) => {
 						a: ({ children, ...props }) => (
 							<a
 								className='font-black text-blue-700 dark:text-blue-400 underline decoration-4 underline-offset-4 decoration-orange-500 hover:bg-orange-500 hover:text-white dark:hover:text-black hover:decoration-black transition-all px-1 inline-block'
+								target='_blank'
+								rel='noopener noreferrer'
 								{...props}
 							>
 								{children}
