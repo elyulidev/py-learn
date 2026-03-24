@@ -87,7 +87,12 @@ const TutorChat: React.FC<TutorChatProps> = ({ context }) => {
                 <ReactMarkdown components={{
                     code({node, inline, className, children, ...props}: any) {
                         return <code className="bg-black/20 px-1 rounded">{children}</code>
-                    }
+                    },
+                    a: ({ children, ...props }) => (
+                        <a target='_blank' rel='noopener noreferrer' className='text-primary-600 dark:text-primary-400 font-bold underline' {...props}>
+                            {children}
+                        </a>
+                    )
                 }}>{msg.text}</ReactMarkdown>
               </div>
             </div>
