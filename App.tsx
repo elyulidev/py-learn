@@ -1,4 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
+import {
+	Routes,
+	Route,
+	Navigate,
+	useParams,
+	useNavigate,
+} from "react-router-dom";
 import { Topic, GeneratedContent } from "./types";
 import { CURRICULUM } from "./constants";
 import { getLessonContent } from "./services/geminiService";
@@ -17,11 +24,21 @@ import {
 	BookOpen,
 } from "lucide-react";
 
-const App: React.FC = () => {
-	const [currentTopic, setCurrentTopic] = useState<Topic | null>(null);
+const LessonLayout: React.FC = () => {
+	const { topicId } = useParams();
+	const navigate = useNavigate();
+
+	const currentTopic = useMemo(() => {
+		for (const chapter of CURRICULUM) {
+			const topic = chapter.topics.find((t) => t.id === topicId);
+			if (topic) return topic;
+		}
+		return null;
+	}, [topicId]);
+
 	const [content, setContent] = useState<GeneratedContent>({
 		markdown: "",
-		loading: false,
+		loading: true,
 	});
 	const [sidebarOpen, setSidebarOpen] = useState(false);
 	const [isDark, setIsDark] = useState(false);
@@ -40,24 +57,19 @@ const App: React.FC = () => {
 		return () => observer.disconnect();
 	}, []);
 
-	// Initial content load
+	// Initial content load based on URL params
 	useEffect(() => {
 		if (!currentTopic) {
-			// Load first topic by default if nothing selected
-			handleTopicSelect(CURRICULUM[0].topics[0]);
-		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
-
-	const handleTopicSelect = async (topic: Topic) => {
-		// Don't reload if selecting the same topic and it's already loaded
-		if (currentTopic?.id === topic.id && !content.loading && content.markdown)
+			// If topic not found, redirect to first topic
+			navigate(`/lesson/${CURRICULUM[0].topics[0].id}`, { replace: true });
 			return;
-
-		setCurrentTopic(topic);
+		}
 
 		// Special handling for custom pages (Evaluation and Bibliography)
-		if (topic.id === "evaluation-main" || topic.id === "bibliography-main") {
+		if (
+			currentTopic.id === "evaluation-main" ||
+			currentTopic.id === "bibliography-main"
+		) {
 			setContent({ markdown: "", loading: false });
 			window.scrollTo({ top: 0, behavior: "smooth" });
 			return;
@@ -68,9 +80,18 @@ const App: React.FC = () => {
 		// Scroll to top
 		window.scrollTo({ top: 0, behavior: "smooth" });
 
-		// Fetch static content (almost instant now)
-		const text = await getLessonContent(topic);
-		setContent({ markdown: text, loading: false });
+		// Fetch static content
+		let isMounted = true;
+		getLessonContent(currentTopic).then((text) => {
+			if (isMounted) setContent({ markdown: text, loading: false });
+		});
+		return () => {
+			isMounted = false;
+		};
+	}, [currentTopic, navigate]);
+
+	const handleTopicSelect = (topic: Topic) => {
+		navigate(`/lesson/${topic.id}`);
 	};
 
 	// Custom Components for Special Pages
@@ -303,6 +324,26 @@ const App: React.FC = () => {
 					)}
 			</div>
 		</div>
+	);
+};
+
+const App: React.FC = () => {
+	return (
+		<Routes>
+			<Route
+				path='/'
+				element={
+					<Navigate to={`/lesson/${CURRICULUM[0].topics[0].id}`} replace />
+				}
+			/>
+			<Route path='/lesson/:topicId' element={<LessonLayout />} />
+			<Route
+				path='*'
+				element={
+					<Navigate to={`/lesson/${CURRICULUM[0].topics[0].id}`} replace />
+				}
+			/>
+		</Routes>
 	);
 };
 
