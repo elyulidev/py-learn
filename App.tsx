@@ -118,7 +118,7 @@ const LessonLayout: React.FC = () => {
 								avaliação final e as instruções.
 							</p>
 							<a
-								href='https://cz7algaabcz8rpd1.public.blob.vercel-storage.com/Avalia%C3%A7%C3%A3o.pdf'
+								href='https://5gnshwxcnlopxrkn.public.blob.vercel-storage.com/Evaluaci%C3%B3n_LP_PT.pdf'
 								download
 								target='_blank'
 								rel='noopener noreferrer'

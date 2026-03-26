@@ -54,14 +54,14 @@ Uma vez baixado o executável, abra-o e realize a instalação.
 Após finalizar, abra o terminal de comandos do Windows (procure por \`cmd\` ou Prompt de Comando) e verifique se foi instalado corretamente executando:
 
 \`\`\`bash
-python -V
+python --version
 \`\`\`
 
 Você verá na saída algo como \`Python 3.10.x\`.
 
 ### 2. Instalando o PyCharm
 
-Agora vamos instalar o PyCharm. Ele é um IDE da empresa JetBrains, disponível para Windows, Linux e macOS.
+Agora vamos instalar o [PyCharm](https://www.jetbrains.com/pycharm/download/). Ele é um IDE da empresa JetBrains, disponível para Windows, Linux e macOS.
 
 Para instalar, acesse a seção de downloads da JetBrains.
 
