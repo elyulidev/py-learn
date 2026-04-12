@@ -74,17 +74,119 @@ print(x[3][2][2]) # 7
 \`\`\`
 
 ### Slicing (Fatiamento)
-Podemos criar sublistas usando \`:\` entre os colchetes \`[inicio:fim]\` (o índice de fim não é incluído):
+
+O slicing é uma das funcionalidades mais poderosas do Python. Permite extrair porções de uma lista usando a sintaxe \`[inicio:fim:passo]\`. O índice **fim nunca é incluído** no resultado.
+
+#### Sintaxe básica \`[inicio:fim]\`
+
+\`\`\`python
+l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(l[2:5])  # [2, 3, 4]  → do índice 2 até o 4 (5 não incluído)
+print(l[0:3])  # [0, 1, 2]  → os três primeiros elementos
+print(l[7:10]) # [7, 8, 9]  → dos índice 7 até o fim
+\`\`\`
+
+#### Omitir início ou fim
+
+Quando omitimos o início, Python usa o índice \`0\`. Quando omitimos o fim, vai até o último elemento:
+
+\`\`\`python
+l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(l[:4])  # [0, 1, 2, 3]     → do início até o índice 3
+print(l[6:])  # [6, 7, 8, 9]     → do índice 6 até o fim
+print(l[:])   # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] → a lista inteira
+\`\`\`
+
+#### Índices negativos no slicing
+
+Os índices negativos contam a partir do final da lista. \`-1\` é o último elemento, \`-2\` o penúltimo, etc.:
+
+\`\`\`python
+l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(l[-3:])   # [7, 8, 9]     → os últimos 3 elementos
+print(l[:-2])   # [0, 1, 2, 3, 4, 5, 6, 7] → tudo menos os últimos 2
+print(l[-5:-2]) # [5, 6, 7]     → do 5º ao 3º elemento a partir do fim
+\`\`\`
+
+#### O parâmetro de passo \`[inicio:fim:passo]\`
+
+O terceiro parâmetro define de quantos em quantos elementos saltamos:
+
+\`\`\`python
+l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(l[::2])    # [0, 2, 4, 6, 8]  → de 2 em 2 (elementos pares)
+print(l[::3])    # [0, 3, 6, 9]     → de 3 em 3
+print(l[1::2])   # [1, 3, 5, 7, 9]  → de 2 em 2 começando do índice 1
+print(l[0:8:2])  # [0, 2, 4, 6]     → do índice 0 ao 7, de 2 em 2
+\`\`\`
+
+#### Passo negativo — inverter listas
+
+Um passo negativo percorre a lista de trás para frente, o que é muito útil para inverter:
+
+\`\`\`python
+l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(l[::-1])   # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] → lista invertida
+print(l[::-2])   # [9, 7, 5, 3, 1]  → invertida de 2 em 2
+print(l[7:2:-1]) # [7, 6, 5, 4, 3]  → do índice 7 até o 3, de trás para frente
+\`\`\`
+
+> **Dica:** \`l[::-1]\` é a forma pythônica e mais eficiente de inverter uma lista.
+
+#### Copiar uma lista com slicing
+
+\`l[:]\` cria uma **cópia rasa** (shallow copy) da lista, evitando que modificações afetem a original:
+
+\`\`\`python
+original = [1, 2, 3, 4, 5]
+copia = original[:]
+
+copia.append(99)
+print(original) # [1, 2, 3, 4, 5]  → não foi modificada
+print(copia)    # [1, 2, 3, 4, 5, 99]
+\`\`\`
+
+#### Modificar elementos com slicing (slice assignment)
+
+O slicing também pode ser usado no lado esquerdo de uma atribuição para substituir, inserir ou remover múltiplos elementos de uma vez:
 
 \`\`\`python
 l = [1, 2, 3, 4, 5, 6]
-print(l[0:2]) # [1, 2]
-print(l[2:6]) # [3, 4, 5, 6]
 
-# Modificação múltipla com slicing
-l[0:3] = [0, 0, 0]
-print(l) # [0, 0, 0, 4, 5, 6]
+# Substituir um trecho
+l[1:4] = [20, 30, 40]
+print(l)  # [1, 20, 30, 40, 5, 6]
+
+# Inserir elementos sem apagar nenhum (fatia vazia)
+l[2:2] = [99, 100]
+print(l)  # [1, 20, 99, 100, 30, 40, 5, 6]
+
+# Remover elementos substituindo por uma lista vazia
+l[2:4] = []
+print(l)  # [1, 20, 30, 40, 5, 6]
+
+# Substituir com um número diferente de elementos
+l[0:3] = [0, 0]
+print(l)  # [0, 0, 40, 5, 6]  → 3 elementos foram trocados por 2
 \`\`\`
+
+#### Resumo visual da sintaxe
+
+| Expressão      | O que faz                                             |
+|----------------|-------------------------------------------------------|
+| \`l[a:b]\`     | Elementos do índice \`a\` até \`b-1\`               |
+| \`l[:b]\`      | Do início até \`b-1\`                                 |
+| \`l[a:]\`      | De \`a\` até o final                                  |
+| \`l[:]\`       | Cópia completa da lista                               |
+| \`l[a:b:s]\`   | Elementos de \`a\` até \`b-1\` com passo \`s\`    |
+| \`l[::-1]\`    | Lista inteira invertida                               |
+| \`l[-n:]\`     | Últimos \`n\` elementos                               |
+| \`l[:-n]\`     | Tudo exceto os últimos \`n\` elementos                |
 
 ## Iterar listas
 
